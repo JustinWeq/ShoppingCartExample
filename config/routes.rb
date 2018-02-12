@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'basic_pages/home'
 
-  get 'basic_pages/about'
+  root 'basic_pages#home'
 
-  get 'basic_pages/contact'
+  get '/home', to: 'basic_pages#home'
+
+  get '/about', to: 'basic_pages#about'
+
+  get '/contact', to: 'basic_pages#contact'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
