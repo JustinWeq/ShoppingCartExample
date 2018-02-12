@@ -1,2 +1,0 @@
-class CartedItem < ApplicationRecord
-end
